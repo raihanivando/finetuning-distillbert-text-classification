@@ -5,7 +5,7 @@ This project implements an end-to-end text classification system using DistilBER
 
 ## Student Information
 - **Name**: [Muhamad Mario Rizki],[Raihan Ivando Diaz],[Abid Sabyano Rozhan]
-- **Student ID**: [1103223063],[110322xxxx],[110322xxxx]
+- **Student ID**: [1103223063],[1103223093],[1103220222]
 - **Course**: Deep Learning - Final Term
 - **Task**: Task 1 - Encoder/BERT-family for Classification
 
@@ -47,4 +47,24 @@ finetuning-bert-text-classification/
 - Recall: 0.9453
 - F1-Score: 0.9453
 
-## 
+## Per Class Performance
+| Category | Precision | Recall | F1-Score | Support |
+|----------|-----------|--------|----------|---------|
+| World    | 0.9581    | 0.9500 | 0.9540   | 1900    |
+| Sports   | 0.9863    | 0.9879 | 0.9871   | 1900    |
+| Business | 0.9264    | 0.9079 | 0.9171   | 1900    |
+| Sci/Tech | 0.9108    | 0.9353 | 0.9229   | 1900    |
+
+**Key Findings**
+- Sports category achieved the highest accuracy (98.71% F1-score) due to distinctive terminology
+- Business category showed the most confusion with other categories (91.71% F1-score)
+- Overall performance exceeds 94%, indicating strong generalization
+
+**Training Configuration**
+- Learning Rate: 2e-5
+- Batch Size (train): 16
+- Batch Size (eval): 32
+- Epochs: 3
+- Optimizer: AdamW with weight decay (0.01)
+- Warmup Steps: 500
+- Max Sequence Length: 128 tokens

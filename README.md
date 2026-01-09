@@ -38,4 +38,13 @@ finetuning-bert-text-classification/
 │ ├── training_results.md # Training metrics
 │ └── analysis.md # Result analysis
 └── requirements.txt # Python dependencies
+```
 
+## Results
+**Model Performances**
+- Accuracy: 94.53%
+- Precision: 0.9454
+- Recall: 0.9453
+- F1-Score: 0.9453
+
+## 

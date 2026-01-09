@@ -24,15 +24,18 @@ This project implements an end-to-end text classification system using DistilBER
 - **Test samples**: 7,600
 
 ## Project Structure
-- finetuning-bert-text-classification/
-  - README.md **Project documentation**
-  - notebooks/ **Jupyter notebooks**
-    - 01_data_preparation.ipynb **Data loading and preprocessing**
-    - 02_tokenization.ipynb **Text tokenization**
-    - 03_model_training.ipynb **Model fine-tuning**
-    - 04_evaluation.ipynb **Model evaluation**
-  - reports/ **Results and visualizations**
-    - confusion_matrix.png **Confusion matrix**
-    - training_results.md **Training metrics**
-    - analysis.md **Result analysis**
-  - requirements.txt **Python dependencies**
+```bash
+finetuning-bert-text-classification/
+├── README.md # Project documentation
+├── notebooks/ # Jupyter notebooks
+│ ├── 01_data_preparation.ipynb # Data loading and preprocessing
+│ ├── 02_tokenization.ipynb # Text tokenization
+│ ├── 03_model_training.ipynb # Model fine-tuning
+│ ├── 04_evaluation.ipynb # Model evaluation
+│ └── 05_inference_demo.ipynb # Usage demo (optional)
+├── reports/ # Results and visualizations
+│ ├── confusion_matrix.png # Confusion matrix
+│ ├── training_results.md # Training metrics
+│ └── analysis.md # Result analysis
+└── requirements.txt # Python dependencies
+
